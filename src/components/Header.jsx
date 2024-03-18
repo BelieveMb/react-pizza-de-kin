@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import {  NavLink } from "react-router-dom";
+
 // import clsx from 'clsx';
 
 const HeaderBar = (
@@ -38,10 +40,11 @@ const HeaderBar = (
                         <i className="bi bi-search text-xl"></i> 
                         Recherche
                     </span>
-                    <Link href='./menu' className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
+
+                    <NavLink to='./menu' className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
                         <i className="bi bi-cart4"></i> 
                         Commander
-                    </Link>
+                    </NavLink>
                     <button className='bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold'>
                         <i className="bi bi-basket2"></i> 
                     </button>
@@ -97,23 +100,23 @@ const SideBar = ({sideBarAction}) => {
                 </div>
 
                 <div className="flex flex-col gap-2 font-bold my-8 text-[0.8rem] ">
-                    <a href="./" className='hover:text-gray-600 hover:delay-700 text-red-500 uppercase flex flex-row justify-between content-baseline items-center'>
+                    <a to="./" className='hover:text-gray-600 hover:delay-700 text-red-500 uppercase flex flex-row justify-between content-baseline items-center'>
                         <span>Accueil </span>
                         <i className="bi bi-house text-2xl"></i>
                     </a>
                     
-                    <Link href='./menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <NavLink to='./menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Menu </span>
                         <i className="bi bi-house text-2xl"></i>
-                    </Link>
-                    <Link href="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    </NavLink>
+                    <NavLink to="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Réservation </span>
                         <i className="bi bi-house text-2xl"></i>
-                    </Link>
-                    <Link href="./shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    </NavLink>
+                    <NavLink to="./shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Shop </span>
                         <i className="bi bi-house text-2xl"></i>
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
 

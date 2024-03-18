@@ -1,15 +1,15 @@
 import React from 'react'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-
-function Index() {
-  return (
-    <main className=' '>
+function Home() {
+    return(
+        <main className=' '>
         <div className="p-[2rem]  bg-center bg-cover bg-no-repeat h-max-[10%]" 
          style={{ backgroundImage: "url('./images/bg-pizza.jpg')" }}>
-          <Header />
-          {/* <HeroSection /> */}
+          {/*<Header />
+           <HeroSection /> */}
         </div>
 
         <div className="text-sm lg:text-xl bg-gray-50 text-gray-800 uppercase para-font-regular flex justify-center lg:py-6 py-10 px-5 text-center relative z-10 " >
@@ -23,6 +23,20 @@ function Index() {
         <Footer /> */}
     
     </main>
+    )
+}
+
+function Index() { 
+  return (
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/username" element={<UserName />} />
+            <Route path="*" element={<PageError />} /> */}
+        </Routes>
+    </BrowserRouter>
+    
+ 
     
 
   )
