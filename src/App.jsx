@@ -9,7 +9,7 @@ function Index() {
         <div className="p-[2rem]  bg-center bg-cover bg-no-repeat h-max-[10%]" 
          style={{ backgroundImage: "url('./images/bg-pizza.jpg')" }}>
           <Header />
-          <HeroSection />
+          {/* <HeroSection /> */}
         </div>
 
         <div className="text-sm lg:text-xl bg-gray-50 text-gray-800 uppercase para-font-regular flex justify-center lg:py-6 py-10 px-5 text-center relative z-10 " >
