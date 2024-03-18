@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 
 function Footer() {
@@ -7,12 +6,10 @@ function Footer() {
     <footer className="flex flex-col lg:flex-row items-center lg:items-baseline justify-between gap-5 bg-gray-900 px-[2rem] py-20">
         <div className="flex flex-col gap-2 items-center lg:items-start lg:justify-start w-full lg:w-[33%] ">
             <div>
-                <Image 
+                <img 
                     src='/images/logo.svg'
                     alt="logo image"
-                    className=''
-                    width={150}
-                    height={30}
+                    className='w-30 h-50'
                 /> 
             </div>
             <p className='w-[15rem] lg:w-[20rem]  text-center lg:text-left'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
