@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 function PizzaSection() {
   return (
@@ -14,12 +13,10 @@ function PizzaSection() {
 
         <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
             <div className="flex flex-col w-full lg:w-[33%] gap-2 justify-center items-center">
-                <Image 
+                <img 
                     src='/images/pizzaimg.png'
                     alt="pizza image"
-                    className=''
-                    width={350}
-                    height={30}
+                    className='w-[350px] h-[30px] '
                 /> 
                 <h3 className='text-xl font-semibold uppercase '>Pizza Margherita</h3>
                 <p className=' para-font-regular  text-center '> Découvrez notre pizza Margherita classique, garnie de tomates juteuses, de mozzarella fondante et de basilic frais.
@@ -27,12 +24,10 @@ function PizzaSection() {
 
             </div>
             <div className="flex flex-col w-full lg:w-[33%] gap-2 justify-center items-center">
-                <Image 
+                <img 
                     src='/images/pizzaimg.png'
                     alt="pizza image"
-                    className=''
-                    width={350}
-                    height={30}
+                    className='w-[350px] h-[30px] '
                 /> 
                 <h3 className='text-xl font-semibold uppercase '>Burger Gourmet</h3>
                 <p className=' para-font-regular  text-center '>                Laissez-vous tenter par notre burger gourmet savoureux, composé de bœuf grillé, de fromage fondant, de légumes croquants et d'une sauce maison
@@ -40,12 +35,10 @@ function PizzaSection() {
 
             </div>
             <div className="flex flex-col w-full lg:w-[33%] gap-2 justify-center items-center">
-                <Image 
+                <img 
                     src='/images/pizzaimg.png'
                     alt="pizza image"
-                    className=''
-                    width={350}
-                    height={30}
+                    className='w-[350px] h-[30px] '
                 /> 
                 <h3 className='text-xl font-semibold uppercase '>Méga plat de pizza</h3>
                 <p className=' para-font-regular  text-center '>

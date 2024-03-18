@@ -28,7 +28,7 @@ const HeaderBar = (
 
                 <div >
                     <img 
-                        src='./images/logo.svg'
+                        src='../images/logo.svg'
                         alt="Pizza de Kin Logo"
                         className="w-[150px] h-[30px]  "
                     />
@@ -41,7 +41,7 @@ const HeaderBar = (
                         Recherche
                     </span>
 
-                    <NavLink to='./menu' className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
+                    <NavLink to='/menu' className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
                         <i className="bi bi-cart4"></i> 
                         Commander
                     </NavLink>
@@ -73,7 +73,6 @@ const BarSearch = ({searchAction}) => {
 }
 
 const SideBar = ({sideBarAction}) => {
-    const pathname = usePathname();
     return (
         <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[65%] lg:w-[25%] h-[50rem] absolute left-0 top-0 z-10 py-6 px-5 '>
             <div className='flex justify-end content-end'>
@@ -82,13 +81,10 @@ const SideBar = ({sideBarAction}) => {
                 </span>
             </div>
             <div className='flex justify-center'>
-                <Image 
-                    src='./images/logo_black.svg'
+                <img 
+                    src='../images/logo_black.svg'
                     alt="Pizza de Kin Logo"
-                    className=""
-                    width={180}
-                    height={50}
-                    priority
+                    className=" w-[180px] h-[50px]"
                 />
             </div>
 
@@ -109,11 +105,11 @@ const SideBar = ({sideBarAction}) => {
                         <span>Menu </span>
                         <i className="bi bi-house text-2xl"></i>
                     </NavLink>
-                    <NavLink to="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <NavLink to="/reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Réservation </span>
                         <i className="bi bi-house text-2xl"></i>
                     </NavLink>
-                    <NavLink to="./shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <NavLink to="/shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Shop </span>
                         <i className="bi bi-house text-2xl"></i>
                     </NavLink>

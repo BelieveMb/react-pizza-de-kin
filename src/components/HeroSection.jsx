@@ -14,9 +14,9 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
                     {boutonText} <i className="bi bi-arrow-right"></i> 
                 </button>
             </div>  
-            <div className="flex flex-col content-start items-start ">
+            <div className=" flex-col content-start items-start hidden">
                 <img 
-                    src='/images/discount.jpg'
+                    src='../images/discount.jpg'
                     alt="discount image"
                     className={` hidden lg:block rounded-full  z-20 absolute right-[35rem] top-20 transition-transform duration-500 ${isImageExpanded ? 'transform scale-50' : 'transform scale-100'}`}
                     />                
