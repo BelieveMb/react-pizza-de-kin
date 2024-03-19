@@ -56,11 +56,11 @@ const FiltrerDish = () => {
 function Shop() {
   return (
     <main className=' para-font-regular '>
-        <div className="bg-gray-200 px-10 py-5">
+        <div className="bg-gray-400 px-10 py-5">
             <Header />
         </div>
         <BannerTitle title='Shop' menu=' Shop' secondMenu=' ' />
-        <section className='flex flex-row gap-6 py-[8%] px-2 lg:px-10 bg-gray-200 h-auto '>
+        <section className='flex flex-row gap-6 py-[8%] px-2 lg:px-10 bg-gray-400 h-auto '>
             <div className="w-[30%] lg:block hidden ">
                 <FiltrerDish />
             </div>

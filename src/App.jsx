@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import MenuPrice from './components/MenuPrice'
 import Reservation from './Reservation'
 import Shop from './Shop'
+import Product from './Product'
 
 function Home() {
     return(
@@ -42,7 +43,7 @@ function Index() {
              <Route path="/menu" element={<Menu />} />
              <Route path="/reservation" element={<Reservation />} />
              <Route path="/shop" element={<Shop />} />
-             <Route path="/shop" element={<Shop />} />
+             <Route path="/product" element={<Product />} />
             {/* <Route path="*" element={<PageError />} /> */}
         </Routes>
     </BrowserRouter>
