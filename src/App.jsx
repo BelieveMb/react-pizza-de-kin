@@ -7,6 +7,7 @@ import ProductImage from './components/ProductImage'
 import Event from './components/Event'
 import PizzaSection from './components/PizzaSection'
 import Footer from './components/Footer'
+import MenuPrice from './components/MenuPrice'
 
 function Home() {
     return(
@@ -24,7 +25,7 @@ function Home() {
          <ProductImage />
         <Event />
         <PizzaSection />
-        {/*<MenuPrice />*/}
+        <MenuPrice />
         <Footer /> 
     
     </main>

@@ -3,8 +3,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="flex flex-col lg:flex-row items-center lg:items-baseline justify-between gap-5 bg-gray-900 px-[2rem] py-20">
-        <div className="flex flex-col gap-2 items-center lg:items-start lg:justify-start w-full lg:w-[33%] ">
+    <footer className="text-gray-100 flex flex-col lg:flex-row items-center lg:items-baseline justify-between gap-5 bg-gray-900 px-1 lg:px-[2rem] py-20">
+        <div className="lg:border-none border-b pb-8 border-gray-800 flex flex-col gap-2 items-center lg:items-start lg:justify-start w-full lg:w-[33%] ">
             <div>
                 <img 
                     src='/images/logo.svg'
@@ -12,9 +12,9 @@ function Footer() {
                     className='w-30 h-50'
                 /> 
             </div>
-            <p className='w-[15rem] lg:w-[20rem]  text-center lg:text-left'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <p className='w-[15rem] lg:w-[20rem]  text-center lg:text-left'> Pour une restauration rapide et de qualité, contactez le meilleur. </p>
             <div className="flex flex-col justify-start items-center lg:items-start">
-                <p> <a href="mailto:mbolokobelieve@gmail.com">support@example.com</a></p>
+                <p> <a href="mailto:mbolokobelieve@gmail.com">contact@FazFood.com</a></p>
                 <p> <a href="tel:+243817723066">+243 817 723 066</a></p>
 
             </div>
