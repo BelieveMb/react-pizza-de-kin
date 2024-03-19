@@ -1,18 +1,14 @@
 import React from 'react'
-import Image from 'next/image';
 
-const ServiceCard = ({imgName, title, contentPara}:
-    {imgName:string, title:string, contentPara:string}) =>
+const ServiceCard = ({imgName, title, contentPara}) =>
     {
     return (
-        <div className="flex flex-col items-center gap-4 w-full lg:w-[30%]">
+        <div className="para-font-regular flex flex-col items-center gap-4 w-full lg:w-[30%]">
             <div>
-                <Image 
+                <img 
                     src={`/images/${imgName}`}
                     alt="pizza image"
-                    className=''
-                    width={100}
-                    height={20}
+                    className='w-[10rem] h-[12rem] '
                 /> 
             </div>
             <h3 className='btn-font-regular text-xl lg:text-[1.5rem] uppercase '> {title} </h3>
@@ -23,7 +19,7 @@ const ServiceCard = ({imgName, title, contentPara}:
 
 function OurServices() {
   return (
-    <section className="flex flex-col lg:flex-row justify-center gap-10 items-center pb-20 " >
+    <section className="flex flex-col lg:flex-row justify-center gap-4 lg:gap-10 items-center pb-20 " >
         <ServiceCard title='Repas qualité' 
             contentPara='Un accompagnement parfait pour compléter votre repas.'
             imgName='fastfood.svg'

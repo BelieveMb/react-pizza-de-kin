@@ -13,7 +13,7 @@ function Menu() {
       <BannerTitle secondMenu=' ' title='Le menu du restaurant' menu=' menu' />
       <ListDish />
       <MenuPrice />
-      {/*<Footer /> */} 
+      <Footer />  
     </main>
   )
 }

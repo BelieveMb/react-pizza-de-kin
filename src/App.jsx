@@ -8,6 +8,8 @@ import Event from './components/Event'
 import PizzaSection from './components/PizzaSection'
 import Footer from './components/Footer'
 import MenuPrice from './components/MenuPrice'
+import Reservation from './Reservation'
+import Shop from './Shop'
 
 function Home() {
     return(
@@ -38,7 +40,9 @@ function Index() {
         <Routes>
             <Route path="/" element={<Home />} />
              <Route path="/menu" element={<Menu />} />
-            {/*<Route path="*" element={<PageError />} /> */}
+             <Route path="/reservation" element={<Reservation />} />
+             <Route path="/shop" element={<Shop />} />
+            {/* <Route path="*" element={<PageError />} /> */}
         </Routes>
     </BrowserRouter>
     

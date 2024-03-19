@@ -1,4 +1,9 @@
 import React from 'react'
+import Header from './components/Header'
+import BannerTitle from './components/BannerTitle'
+import OurServices from './components/OurServices'
+import ReservationForm from './components/ReservationForm'
+import Footer from './components/Footer'
 
 function Reservation() {
   return (
@@ -11,7 +16,7 @@ function Reservation() {
         <OurServices />
         <div className="flex flex-col items-center content-center justify-center gap-1 lg:gap-2 ">
             <h2 className='text-xl lg:text-2xl text-red-500 sous-title-font-bold  lg:mb-4'>Repas spécial </h2>
-            <h1 className='title-font-regular text-2xl lg:text-[3rem] text-center uppercase '>Resérver votre table </h1>
+            <h1 className='title-font-regular text-3xl lg:text-[3rem] text-center uppercase '>Resérver votre table </h1>
         </div>
         <ReservationForm />
 
