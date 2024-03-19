@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 function Footer() {
@@ -23,20 +24,20 @@ function Footer() {
         <div className="flex flex-col gap-2 justify-start items-center lg:items-start  w-full lg:w-[33%] ">
             <h4 className='text-xl  sous-title-font-bold mb-2'>Nos produits</h4>
             <ul className="flex flex-col justify-start">
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza Inn 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza Inn 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza Inn 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza Inn 1</a>
+                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza XL</a>
+                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Burger MG</a>
+                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Double Combo</a>
+                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Xl Combo</a>
             </ul>
         </div>
 
         <div className="flex flex-col gap-2 justify-start items-center lg:items-start w-full lg:w-[33%] ">
             <h4 className='text-xl  sous-title-font-bold mb-2'>Liens rapides</h4>
             <ul className="flex flex-col justify-start">
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Link 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Link 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Link 1</a>
-                <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Link 1</a>
+                <NavLink to="/" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Home</NavLink>
+                <NavLink to="/menu" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Menu</NavLink>
+                <NavLink to="/shop" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Shop</NavLink>
+                <NavLink to="/reservation" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Réservation</NavLink>
             </ul>
         </div>
 

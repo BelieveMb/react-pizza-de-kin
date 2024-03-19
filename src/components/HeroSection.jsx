@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}) => {
     return (
@@ -10,9 +11,9 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
                 <p className='my-2 lg:mt-4 px-10 py-2 lg:py-8 para-font-regular text-gray-300'>
                     {contentText}
                 </p>
-                <button className='.btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
+                <NavLink to='/shop'  className='.btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
                     {boutonText} <i className="bi bi-arrow-right"></i> 
-                </button>
+                </NavLink >
             </div>  
             <div className=" flex-col content-start items-start hidden">
                 <img 

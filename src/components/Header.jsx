@@ -74,7 +74,7 @@ const BarSearch = ({searchAction}) => {
 
 const SideBar = ({sideBarAction}) => {
     return (
-        <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[65%] lg:w-[25%] h-[50rem] absolute left-0 top-0 z-10 py-6 px-5 '>
+        <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[65%] lg:w-[25%] h-[30rem] rounded-b-xl absolute left-0 top-0 z-1 py-6 px-5 '>
             <div className='flex justify-end content-end'>
                 <span className="text-4xl text-gray-950 hover:text-red-500 cursor-pointer" onClick={sideBarAction} >
                     <i className="bi bi-x"></i>
@@ -101,17 +101,17 @@ const SideBar = ({sideBarAction}) => {
                         <i className="bi bi-house text-2xl"></i>
                     </a>
                     
-                    <NavLink to='./menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <NavLink to='/menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Menu </span>
-                        <i className="bi bi-house text-2xl"></i>
+                        <i className="bi bi-list text-2xl"></i>
                     </NavLink>
                     <NavLink to="/reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Réservation </span>
-                        <i className="bi bi-house text-2xl"></i>
+                        <i className="bi bi-save text-2xl"></i>
                     </NavLink>
                     <NavLink to="/shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Shop </span>
-                        <i className="bi bi-house text-2xl"></i>
+                        <i className="bi bi-shop text-2xl"></i>
                     </NavLink>
                 </div>
             </div>

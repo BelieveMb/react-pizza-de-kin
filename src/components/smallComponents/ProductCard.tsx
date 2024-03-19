@@ -1,23 +1,19 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link';
+import { NavLink } from 'react-router-dom'
 
-function ProductCard({imageName, titleCard, detailCard, priceCard} :
-    {imageName:string, titleCard:string, detailCard:string, priceCard:number}) {
+
+function ProductCard({imageName, titleCard, detailCard, priceCard}) {
   return (
-    // w-full lg:w-[33%]
     <div className="flex flex-col  gap-2 justify-center items-center">
-        <Image 
+        <img 
             src={`/images/${imageName}`}
             alt="pizza image"
-            className='relative z-10'
-            width={350}
-            height={30}
+            className='relative z-10 h-[20rem] w-[18rem] '
         /> 
         <div className="bg-gray-50 text-gray-700 rounded-xl px-5 py-4 
            h-auto -mt-36 pt-32 cursor-pointer ">
             <div className="flex justify-between">
-                <Link href="./shop/product"  className='text-xl font-semibold uppercase hover:text-green-600'>{titleCard} </Link >
+                <NavLink to="/product"  className='text-xl font-semibold uppercase hover:text-green-600'>{titleCard} </NavLink >
                 <span className="text-2xl hover:text-red-700">
                     <i className="bi bi-heart"></i>
                 </span>
