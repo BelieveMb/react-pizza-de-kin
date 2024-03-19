@@ -1,4 +1,7 @@
-
+body {
+  margin: 0;
+  padding: 0;
+}
 .para-font-regular {
   font-family: "Mooli", sans-serif;
   font-weight: 400;

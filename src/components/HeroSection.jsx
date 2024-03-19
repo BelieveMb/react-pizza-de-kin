@@ -6,8 +6,8 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
         <aside className=' my-10 lg:my-[5rem] flex lg:flex-row flex-col gap-4 lg:justify-between justify-center content-start items-start'>
             <div className="w-full lg:w-[50%] py-10 lg:p-0 flex flex-col justify-center content-center items-center text-center">
                 <h2 className='text-xl lg:text-3xl text-yellow-400 uppercase mb-5 sous-title-font-bold'>{sousTitle} </h2>
-                <h1 className='title-font-regular text-4xl lg:text-[3.5rem] text-center uppercase leading-snug lg:leading-none'>{title} </h1>
-                <p className='my-2 lg:mt-4 px-10 py-2 lg:py-8 para-font-regular'>
+                <h1 className='title-font-regular text-4xl lg:text-[3.5rem] text-center uppercase leading-snug lg:leading-none text-gray-100'>{title} </h1>
+                <p className='my-2 lg:mt-4 px-10 py-2 lg:py-8 para-font-regular text-gray-300'>
                     {contentText}
                 </p>
                 <button className='.btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>

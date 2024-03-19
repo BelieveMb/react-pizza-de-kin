@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 const PriceItem = ({product, price, detail} : {
   product : string,
