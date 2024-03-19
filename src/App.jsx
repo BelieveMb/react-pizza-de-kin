@@ -42,6 +42,7 @@ function Index() {
              <Route path="/menu" element={<Menu />} />
              <Route path="/reservation" element={<Reservation />} />
              <Route path="/shop" element={<Shop />} />
+             <Route path="/shop" element={<Shop />} />
             {/* <Route path="*" element={<PageError />} /> */}
         </Routes>
     </BrowserRouter>

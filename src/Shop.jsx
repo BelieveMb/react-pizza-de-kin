@@ -73,7 +73,7 @@ function Shop() {
                 /> 
                 <ProductCard 
                     titleCard='Pizza Xl'
-                    imageName='pizzaimg3.png' 
+                    imageName='sushi.png' 
                     detailCard='Un accompagnement parfait pour compléter votre repas.'
                     priceCard={15}
                 /> 
@@ -81,15 +81,15 @@ function Shop() {
 
                     <ProductCard 
                         titleCard='Double burger'
-                        imageName='pizzaimg.png' 
+                        imageName='b.png' 
                         priceCard={20}
-                        detailCard='Un pur délice pour les amateurs de burgers.'
+                        detailCard='Un accompagnement parfait pour compléter votre repas.'
                     /> 
                 </div>
                 
                 <ProductCard 
                     titleCard='Big Mac'
-                    imageName='pizzaimg.png' 
+                    imageName='biryani.png' 
                     detailCard='Un accompagnement parfait pour compléter votre repas.'
                     priceCard={50}
                 />
