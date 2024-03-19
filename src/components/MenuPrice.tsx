@@ -1,10 +1,6 @@
 import React from 'react'
 
-const PriceItem = ({product, price, detail} : {
-  product : string,
-  price : string,
-  detail : string,
-}) => {
+const PriceItem = ({product, price, detail}) => {
   return (
     <>
       <div className="flex flex-row justify-between text-xl font-semibold">
@@ -24,22 +20,19 @@ function MenuPrice() {
             <h4 className='text-sm  text-red-500 sous-title-font-bold mb-2 '>Explorer nos repas spéciaux </h4>
             <h2 className='title-font-regular text-3xl lg:text-[4rem] uppercase w-full lg:w-[40rem]  lg:leading-[3rem] leading-[1.5rem] lg:text-left text-center '>Nous aimons vous faire une surprise </h2>
         </div>
-        <Image 
+        <img 
             src='/images/pizzaimg.png'
             alt="pizza image"
-            className='text-center'
-            width={200}
-            height={25}
+            className='text-center w-[30rem] h-[20rem] '
         /> 
       </div>
       
       <div className="flex lg:flex-row flex-col justify-between content-start items-start gap-20">
         <div className='w-1/2 lg:block hidden'>
-          <Image 
+          <img 
               src='/images/burger-personne.jpg'
               alt="person eats image"
-              width={650}
-              height={30}
+              className='w-[30rem] h-[20rem] '
               />
         </div>
 
